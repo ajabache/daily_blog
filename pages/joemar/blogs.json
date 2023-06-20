@@ -1,0 +1,54 @@
+{
+    "blog": {
+        "title": "Joemar Blogs",
+        "author": "Joemar",
+        "description": "Welcome to my blog! Here, I share my thoughts and experiences.",
+        "posts": [
+            {
+                "title": "Day 1",
+                "date": "2023-06-18",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, felis in ullamcorper scelerisque, metus risus fringilla est, eu finibus lectus urna sed ante.",
+                "images": [
+                    "img/img1.jpg",
+                    "image2.jpg"
+                ]
+            },
+            {
+                "title": "Day 2",
+                "date": "2023-06-20",
+                "content": "Vivamus vestibulum gravida orci, et condimentum metus dapibus id. In tempor augue nec urna pellentesque, at consectetur velit dignissim. Proin tincidunt lobortis arcu, nec convallis nibh ullamcorper vitae.",
+                "images": [
+                    "image1.jpg",
+                    "image2.jpg"
+                ]
+            },
+            {
+                "title": "Day 3",
+                "date": "2023-06-20",
+                "content": "Vivamus vestibulum gravida orci, et condimentum metus dapibus id. In tempor augue nec urna pellentesque, at consectetur velit dignissim. Proin tincidunt lobortis arcu, nec convallis nibh ullamcorper vitae.",
+                "images": [
+                    "image1.jpg",
+                    "image2.jpg"
+                ]
+            },
+            {
+                "title": "Day 4",
+                "date": "2023-06-22",
+                "content": "Donec placerat enim et ex rutrum congue. Mauris pharetra iaculis ultricies. Cras ac finibus urna, at iaculis est.",
+                "images": [
+                    "image1.jpg",
+                    "image2.jpg"
+                ]
+            },
+            {
+                "title": "Day 5",
+                "date": "2023-06-22",
+                "content": "Donec placerat enim et ex rutrum congue. Mauris pharetra iaculis ultricies. Cras ac finibus urna, at iaculis est.",
+                "images": [
+                    "image1.jpg",
+                    "image2.jpg"
+                ]
+            }
+        ]
+    }
+}
