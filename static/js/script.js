@@ -2,12 +2,15 @@ fetch("blogs.json")
     .then(response => response.json())
     .then(data => {
 
+        const titleArea = document.getElementById('title');
         const authorArea = document.getElementById('author');
         const blogContent = document.getElementById('blogContent');
         const author = data.blog.author + "'s Blogs";
+        const title = data.blog.author + "'s Blogs";
         const posts = data.blog.posts;
 
         authorArea.textContent = author;
+        titleArea.textContent = title;
 
         posts.forEach(post => {
             const { title, date, content } = post;
