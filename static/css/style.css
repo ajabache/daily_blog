@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .fancy-title {
-    font-family: 'Pacifico', cursive;
     font-size: 4rem;
-    /* color: #6B46C1; */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }

@@ -5,15 +5,15 @@ fetch("blogs.json")
         const titleArea = document.getElementById('title');
         const authorArea = document.getElementById('author');
         const blogContent = document.getElementById('blogContent');
-        const author = data.blog.author + "'s Blogs";
-        const title = data.blog.author + "'s Blogs";
+        const author = data.blog.author;
+        const title = data.blog.author;
         const posts = data.blog.posts;
 
-        authorArea.textContent = author;
-        titleArea.textContent = title;
+        authorArea.textContent = author + "'s Blogs";
+        titleArea.textContent = title  + "'s Blogs";
 
         posts.forEach(post => {
-            const { title, date, content } = post;
+            const { id, title, date, content } = post;
 
             const postElement = document.createElement('div');
             postElement.className = 'post';
@@ -28,9 +28,13 @@ fetch("blogs.json")
             dateElement.textContent = date;
             postElement.appendChild(dateElement);
 
-            const contentElement = document.createElement('div');
+            const contentElement = document.createElement('button');
             contentElement.className = 'prose';
             contentElement.innerHTML = content;
+            contentElement.addEventListener('click', () => {
+                // Redirect to the individual post page based on the post ID
+                window.location.href = `/pages/${author.toLowerCase()}/post.html?id=${id}`;
+            });
             postElement.appendChild(contentElement);
 
             blogContent.appendChild(postElement);
