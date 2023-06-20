@@ -32,7 +32,6 @@ fetch("blogs.json")
             contentElement.className = 'prose';
             contentElement.innerHTML = content;
             contentElement.addEventListener('click', () => {
-                // Redirect to the individual post page based on the post ID
                 window.location.href = `/pages/${author.toLowerCase()}/post.html?id=${id}`;
             });
             postElement.appendChild(contentElement);

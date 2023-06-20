@@ -2,6 +2,7 @@
     "blog": {
         "title": "Joemar Blogs",
         "author": "Joemar",
+        "profile": "img/profile.jpg",
         "description": "Welcome to my blog! Here, I share my thoughts and experiences.",
         "posts": [
             {
