@@ -1,7 +1,8 @@
 {
     "blog": {
-        "title": "Adrian Blogs",
-        "author": "Adrian",
+        "title": "Adrian's Blog",
+        "author": "Adrian Abache",
+        "profileImg": "img/profile.jpg",
         "description": "Welcome to my blog! Here, I share my thoughts and experiences.",
         "posts": [
             {
@@ -11,7 +12,7 @@
                 "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, felis in ullamcorper scelerisque, metus risus fringilla est, eu finibus lectus urna sed ante.",
                 "images": [
                     "img/img1.jpg",
-                    "image2.jpg"
+                    "img/image2.jpg"
                 ]
             },
             {
