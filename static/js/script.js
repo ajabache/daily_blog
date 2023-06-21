@@ -75,6 +75,59 @@ function fetchBlogPost() {
         dateElement.textContent = blog.date;
         dateElement.setAttribute("datetime", blog.date);
         dateElement.setAttribute("title", blog.title);
+
+        const folderUrl = blog.img_path;
+        console.log(folderUrl);
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", folderUrl);
+        xhr.onload = () => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(xhr.responseText, "text/html");
+          const imageLinks = Array.from(
+            htmlDoc.querySelectorAll(
+              'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".png"], a[href$=".gif"]'
+            )
+          ).map((link) => {
+            const folderName = folderUrl.split(",").pop();
+            return `${folderName}${link.href.split("/").pop()}`;
+          });
+
+          console.log(imageLinks);
+          if (imageLinks.length > 0) {
+            const extraImage = document.querySelector('.extraImage');
+extraImage.remove();
+            console.log("ok siya");
+            document.getElementById("carouselArea").classList.remove("hidden");
+            const container = document.getElementById("imgContainer");
+
+            imageLinks.forEach((src) => {
+              const div = document.createElement("div");
+              div.classList.add("hidden", "duration-200", "ease-linear");
+              div.setAttribute("data-carousel-item", "");
+
+              const img = document.createElement("img");
+              img.classList.add(
+                "absolute",
+                "block",
+                "w-full",
+                "-translate-x-1/2",
+                "-translate-y-1/2",
+                "top-1/2",
+                "left-1/2"
+              );
+
+              img.alt = "...";
+              img.src = src;
+
+              div.appendChild(img);
+              container.appendChild(div);
+            });
+          } else {
+            console.log("hindi siya ok");
+            document.getElementById("carouselArea").classList.add("hidden");
+          }
+        };
+        xhr.send();
       } else {
         const authorArray = author.split(" ");
         window.location.href = `/pages/${authorArray[0].toLowerCase()}`;

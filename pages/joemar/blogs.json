@@ -10,30 +10,21 @@
                 "title": "Day 1",
                 "date": "2023-06-18",
                 "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, felis in ullamcorper scelerisque, metus risus fringilla est, eu finibus lectus urna sed ante.",
-                "images": [
-                    "img/img1.jpg",
-                    "img/image2.jpg"
-                ]
+                "img_path": "img/day-1/"
             },
             {
                 "id": 2,
                 "title": "Day 2",
                 "date": "2023-06-20",
                 "content": "Vivamus vestibulum gravida orci, et condimentum metus dapibus id. In tempor augue nec urna pellentesque, at consectetur velit dignissim. Proin tincidunt lobortis arcu, nec convallis nibh ullamcorper vitae.",
-                "images": [
-                    "image1.jpg",
-                    "image2.jpg"
-                ]
+                "img_path": "img/day-2/"
             },
             {
                 "id": 3,
                 "title": "Day 3",
                 "date": "2023-06-20",
                 "content": "Vivamus vestibulum gravida orci, et condimentum metus dapibus id. In tempor augue nec urna pellentesque, at consectetur velit dignissim. Proin tincidunt lobortis arcu, nec convallis nibh ullamcorper vitae.",
-                "images": [
-                    "image1.jpg",
-                    "image2.jpg"
-                ]
+                "img_path": "img/day-3/"
             }
         ]
     }
