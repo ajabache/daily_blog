@@ -73,7 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
           dateElement.setAttribute("datetime", blog.date);
           dateElement.setAttribute("title", blog.title);
         } else {
-          console.error(`Blog post with id ${id} not found`);
+          const authorArray = author.split(" ");
+          window.location.href = `/pages/${authorArray[0].toLowerCase()}`;
         }
 
         const profileImgElement = document.getElementById("profileImg");
