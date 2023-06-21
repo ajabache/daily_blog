@@ -7,9 +7,19 @@ body {
 .fancy-title {
     font-size: 4rem;
 }
-.grid img{
+.container .grid .row img{
     margin: auto;
     border-radius: 10px;
     height: 400px;
     margin: 20px;
+}
+.container .grid .row h2{
+    font-weight: 700;
+    font-size: 30px;
+    padding: 20px;
+}
+.container .grid .row p{
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
 }
