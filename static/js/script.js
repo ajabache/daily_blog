@@ -77,7 +77,6 @@ function fetchBlogPost() {
         dateElement.setAttribute("title", blog.title);
 
         const folderUrl = blog.img_path;
-        console.log(folderUrl);
         const xhr = new XMLHttpRequest();
         xhr.open("GET", folderUrl);
         xhr.onload = () => {
@@ -92,11 +91,9 @@ function fetchBlogPost() {
             return `${folderName}${link.href.split("/").pop()}`;
           });
 
-          console.log(imageLinks);
           if (imageLinks.length > 0) {
-            const extraImage = document.querySelector('.extraImage');
-extraImage.remove();
-            console.log("ok siya");
+            const extraImage = document.querySelector(".extraImage");
+            extraImage.remove();
             document.getElementById("carouselArea").classList.remove("hidden");
             const container = document.getElementById("imgContainer");
 
@@ -123,7 +120,6 @@ extraImage.remove();
               container.appendChild(div);
             });
           } else {
-            console.log("hindi siya ok");
             document.getElementById("carouselArea").classList.add("hidden");
           }
         };
