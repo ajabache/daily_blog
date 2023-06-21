@@ -12,6 +12,8 @@ body {
     border-radius: 10px;
     height: 400px;
     margin: 20px;
+    border: 2px solid gray;
+    box-shadow: 0 0 20px gray
 }
 .container .grid .row h2{
     font-weight: 700;
