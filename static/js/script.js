@@ -94,7 +94,9 @@ function fetchBlogPost() {
           if (imageLinks.length > 0) {
             const extraImage = document.querySelector(".extraImage");
             extraImage.remove();
-            document.getElementById("carouselArea").classList.remove("hidden");
+            document
+              .getElementById("animation-carousel")
+              .classList.remove("hidden");
             const container = document.getElementById("imgContainer");
 
             imageLinks.forEach((src) => {
@@ -120,7 +122,9 @@ function fetchBlogPost() {
               container.appendChild(div);
             });
           } else {
-            document.getElementById("carouselArea").classList.add("hidden");
+            document
+              .getElementById("animation-carousel")
+              .classList.add("hidden");
           }
         };
         xhr.send();
