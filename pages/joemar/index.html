@@ -8,7 +8,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../static/css/style.css">
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
@@ -31,9 +31,18 @@
     </div>
 
     <div class="container mx-auto p-8">
-        <h1 class="text-4xl font-bold text-gray-800 mb-4" id="author"></h1>
-        <div id="blogContent"></div>
+        <h1 class="text-4xl font-bold text-gray-800 mb-4" id="title"></h1>
+        <div id="blogContent">
+            <template id="blogPost">
+                <div class="post">
+                    <div class="text-2xl font-bold text-gray-800"></div>
+                    <div class="date"></div>
+                    <button class="prose"></button>
+                </div>
+            </template>
+        </div>
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="../../static/js/script.js"></script>

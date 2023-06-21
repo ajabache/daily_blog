@@ -2,31 +2,26 @@ const titleArea = document.getElementById("title");
 const authorArea = document.getElementById("author");
 const blogContent = document.getElementById("blogContent");
 
-if (window.location.href.includes("joemar") || window.location.href.includes("adrian")) {
+if (
+  window.location.href.includes("joemar") ||
+  window.location.href.includes("adrian")
+) {
   fetch("blogs.json")
     .then((response) => response.json())
     .then((data) => {
-      const { author, title, posts } = data.blog;
+      const { author, posts } = data.blog;
 
-      authorArea.textContent = author;
-      titleArea.textContent = title;
-
-      const postTemplate = document.createElement("template");
-      postTemplate.innerHTML = `
-        <div class="post">
-          <div class="text-2xl font-bold text-gray-800"></div>
-          <div class="date"></div>
-          <button class="prose"></button>
-        </div>
-      `;
+      const postTemplate = document.getElementById("blogPost");
 
       posts.forEach((post) => {
         const { id, title, date, content } = post;
 
         const postElement = postTemplate.content.cloneNode(true);
-        const titleElement = postElement.querySelector(".text-2xl");
-        const dateElement = postElement.querySelector(".date");
-        const contentElement = postElement.querySelector(".prose");
+        const titleElement = postElement.querySelector(
+          ".post div:nth-child(1)"
+        );
+        const dateElement = postElement.querySelector(".post div:nth-child(2)");
+        const contentElement = postElement.querySelector(".post button");
 
         titleElement.textContent = title;
         dateElement.textContent = date;
