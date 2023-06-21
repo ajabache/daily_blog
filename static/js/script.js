@@ -4,8 +4,10 @@ function fetchPosts() {
   fetch("blogs.json")
     .then((response) => response.json())
     .then((data) => {
-      const { author, posts } = data.blog;
+      const { author, title, posts } = data.blog;
       const postTemplate = document.getElementById("blogPost");
+      const titleArea = document.getElementById("title");
+      titleArea.textContent = title;
 
       posts.forEach((post) => {
         const { id, title, date, content } = post;
@@ -26,18 +28,18 @@ function fetchPosts() {
 
           if (content) {
             contentElement.innerHTML = content;
-            contentElement.addEventListener("click", () => {
-              const authorArray = author.split(" ");
-              window.location.href = `/pages/${authorArray[0].toLowerCase()}/post.html?id=${id}`;
-            });
           } else {
-            contentElement.textContent = "Read more";
-            contentElement.disabled = true;
+            contentElement.remove();
           }
+
+          const readMoreButton = postElement.querySelector(".post button");
+          readMoreButton.addEventListener("click", () => {
+            const authorArray = author.split(" ");
+            window.location.href = `/pages/${authorArray[0].toLowerCase()}/post.html?id=${id}`;
+          });
 
           blogContent.appendChild(postElement);
         }
-        
       });
     })
     .catch((error) => console.error(error));
@@ -91,6 +93,7 @@ if (
 ) {
   document.addEventListener("DOMContentLoaded", fetchPosts);
 }
+
 if (window.location.href.includes("post")) {
   document.addEventListener("DOMContentLoaded", fetchBlogPost);
 }
