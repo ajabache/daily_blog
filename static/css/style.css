@@ -7,3 +7,9 @@ body {
 .fancy-title {
     font-size: 4rem;
 }
+.grid img{
+    margin: auto;
+    border-radius: 10px;
+    height: 400px;
+    margin: 20px;
+}
