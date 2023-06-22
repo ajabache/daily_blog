@@ -30,7 +30,8 @@ function fetchPosts() {
           dateElement.textContent = date;
 
           if (content) {
-            contentElement.innerHTML = content;
+            const truncatedContent = content.substring(0, 150);
+            contentElement.textContent = truncatedContent + "...";
           } else {
             contentElement.remove();
           }

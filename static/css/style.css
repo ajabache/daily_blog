@@ -7,30 +7,51 @@ body {
 .fancy-title {
     font-size: 4rem;
 }
-.container .grid .row img{
-    margin: auto;
+
+.image {
+    width: 300px;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 80%;
+    /* Set a maximum width to control text wrapping */
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+    color: #fff;
     border-radius: 10px;
-    height: 400px;
-    margin: 20px;
-    border: 2px solid gray;
-    box-shadow: 0 0 20px gray
 }
-.container .grid .row h2{
-    font-weight: 700;
-    font-size: 30px;
-    padding: 20px;
+.container .post{
+    max-width: 50%;
 }
-.container .grid .row p{
-    text-align: justify;
-    margin: 20px;
-    padding: 20px;
-}
-@media (max-width:1199px){
-    
-}
-@media (max-width:991px){
-    
-}
-@media (max-width:767px){
-    
-}
+
+@media (max-width: 767px) {
+    .overlay {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .image-container:hover img {
+      transform: scale(1.1);
+    }
+    .image-container:hover h2 {
+      display: none;
+    }
+  }

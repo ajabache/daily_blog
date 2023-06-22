@@ -16,41 +16,54 @@
 <body class="bg-gray-100">
 
     <div class="container mx-auto p-8">
-        <div class="flex justify-between items-center mb-8">
+        <div class="flex justify-center items-center mb-8">
             <h1 class="fancy-title">Blog Homepage</h1>
         </div>
 
-        <div class="grid grid-cols-2 gap-8">
-            <div class="row">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+            <div class="h-[70%] w-full md:w-[30%] p-4">
                 <a href="pages/adrian/"
-                    class="bg-white shadow-md hover:shadow-lg transition duration-300 rounded-lg p-4 flex flex-col items-center justify-center">
-                    <h2 class="text-xl font-bold text-gray-800 mb-2">Adrian Jones M. Abache</h2>
-                    <img src="static/images/aj.jpg" alt="">
-                    <p class="text-gray-500">
-                        Adrian is a dedicated Bicol University student pursuing a Bachelor of Science in Computer Science.
-                        With a passion for technology and a sharp problem-solving aptitude, Adrian excels in complex
-                        programming concepts and methodologies. His strong work ethic, adaptability, and collaborative
-                        nature make him a valuable asset to any team. Known for his leadership skills and commitment to
-                        personal growth, Adrian is poised to make a significant impact in the field of computer science.
-                    </p>
+                    class="image-container relative flex flex-col items-center justify-center rounded-lg bg-white p-4 shadow-md transition duration-300 hover:shadow-lg">
+                    <img src="static/images/aj.jpg" alt="Image" class="h-64 w-full rounded-lg object-cover" />
+                    <div
+                        class="overlay absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-60 opacity-0 transition-opacity duration-300">
+                        <p class="text-m p-10 text-justify text-white hidden md:block">Adrian is a dedicated Bicol
+                            University student pursuing a Bachelor of Science in Computer Science. With a passion for
+                            technology and a sharp problem-solving aptitude, Adrian excels in complex programming
+                            concepts and methodologies. His strong work ethic, adaptability, and collaborative nature
+                            make him a valuable asset to any team. Known for his leadership skills and commitment to
+                            personal growth, Adrian is poised to make a significant impact in the field of computer
+                            science.</p>
+                    </div>
+                    <h2 class="text-bolder pt-4">Adrian Jones M. Abache</h2>
                 </a>
             </div>
-            <div class="row">
+            <div class="h-[70%] w-full md:w-[30%] p-4">
                 <a href="pages/joemar/"
-                    class="bg-white shadow-md hover:shadow-lg transition duration-300 rounded-lg p-4 flex flex-col items-center justify-center">
-                    <h2 class="text-xl font-bold text-gray-800 mb-2">Joemar J. Cardino</h2>
-                    <img src="static/images/mar.jpg" alt="">
-                    <p class="text-gray-500">
-                        Joemar is an ambitious Bicol University student studying for a Bachelor of Science in Computer
-                        Science. With a genuine passion for leveraging technology to create meaningful solutions, Joemar
-                        possesses strong programming skills and attention to detail. His collaborative spirit, excellent
-                        communication skills, and dedication to continuous learning enable him to excel in team
-                        environments. Joemar's drive for innovation positions him as a promising professional in the dynamic
-                        field of computer science.
-                    </p>
+                    class="image-container relative flex flex-col items-center justify-center rounded-lg bg-white p-4 shadow-md transition duration-300 hover:shadow-lg">
+                    <img src="static/images/mar.jpg" alt="Image" class="h-64 w-full rounded-lg object-cover" />
+                    <div
+                        class="overlay absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-60 opacity-0 transition-opacity duration-300">
+                        <p class="text-m p-10 text-justify text-white hidden md:block">Joemar is an ambitious Bicol
+                            University student studying for a Bachelor of Science in Computer
+                            Science. With a genuine passion for leveraging technology to create meaningful solutions,
+                            Joemar
+                            possesses strong programming skills and attention to detail. His collaborative spirit,
+                            excellent
+                            communication skills, and dedication to continuous learning enable him to excel in team
+                            environments. Joemar's drive for innovation positions him as a promising professional in the
+                            dynamic
+                            field of computer science.</p>
+                    </div>
+                    <h2 class="text-bolder pt-4">Joemar J. Cardino</h2>
                 </a>
             </div>
         </div>
+
+
+
+
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
