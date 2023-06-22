@@ -117,7 +117,7 @@ function fetchBlogPost() {
               );
 
               img.alt = "...";
-              img.src = src;
+              img.src = 'https://media.sproutsocial.com/uploads/meme-example.jpg';
 
               div.appendChild(img);
               container.appendChild(div);
