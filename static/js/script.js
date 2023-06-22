@@ -77,7 +77,7 @@ function fetchBlogPost() {
         dateElement.setAttribute("title", blog.title);
 
         const folderUrl = blog.img_path;
-        console.log(folderUrl);
+        console.error(folderUrl);
         const xhr = new XMLHttpRequest();
         xhr.open("GET", folderUrl);
         xhr.onload = () => {
