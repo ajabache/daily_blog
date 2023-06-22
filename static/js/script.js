@@ -1,3 +1,6 @@
+// db configuration
+
+// fetching post in author's page
 function fetchPosts() {
   const blogContent = document.getElementById("blogContent");
 
@@ -45,6 +48,7 @@ function fetchPosts() {
     .catch((error) => console.error(error));
 }
 
+// fetching blogs post page
 function fetchBlogPost() {
   const titleArea = document.getElementById("title");
 
@@ -117,7 +121,7 @@ function fetchBlogPost() {
               );
 
               img.alt = "...";
-              img.src = 'https://media.sproutsocial.com/uploads/meme-example.jpg';
+              img.src = src;
 
               div.appendChild(img);
               container.appendChild(div);
