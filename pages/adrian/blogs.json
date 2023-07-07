@@ -1,7 +1,7 @@
 {
     "blog": {
-        "title": "Adrian's Blog",
-        "author": "Adrian Abache",
+        "title": "AJ's Blog",
+        "author": "Adrian Jones Abache",
         "profileImg": "img/profile.jpg",
         "description": "Welcome to my blog! Here, I share my thoughts and experiences.",
         "posts": [
@@ -9,7 +9,7 @@
                 "id": 1,
                 "title": "Day 1",
                 "date": "2023-06-18",
-                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, felis in ullamcorper scelerisque, metus risus fringilla est, eu finibus lectus urna sed ante.",
+                "content": "On June 16, 2023, I embarked on my first day of On-the-Job Training (OJT) at Bicol University, where I had the privilege of being interviewed and oriented by Dr. Rommel Evan Paje, an esteemed professional in the field. As I entered the office, I felt a mix of excitement and anticipation, eager to immerse myself in the working environment and apply my knowledge and skills gained through my studies.",
                 "img_path": "img/day-1/"
             },
             {

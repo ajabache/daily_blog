@@ -39,9 +39,6 @@ body {
     color: #fff;
     border-radius: 10px;
 }
-.container .post{
-    max-width: 50%;
-}
 
 @media (max-width: 767px) {
     .overlay {
