@@ -1,4 +1,4 @@
-# daily_blog of rjoemar and adrian
+# daily_blog of joemar and adrian
 
 todo
  routing using id
